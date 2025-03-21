@@ -32,6 +32,7 @@
   },
   "homepage": "https://github.com/DebojyotiMishra/SELEA-Subscription-Tracking#readme",
   "dependencies": {
+    "dotenv": "^16.4.7",
     "express": "^4.21.2"
   }
 }

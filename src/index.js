@@ -12,13 +12,15 @@ app.use(express.json());
 
 // Health check endpoint
 app.get(`${apiPrefix}/health`, (req, res) => {
-  res.json({ 
+  res.json({
     status: 'ok',
     environment: process.env.NODE_ENV,
-    timestamp: new Date().toISOString()
+    timestamp: new Date().toISOString(),
   });
 });
 
 app.listen(port, () => {
-  console.log(`Server is running on port ${port} in ${process.env.NODE_ENV} mode`);
+  console.log(
+    `Server is running on port ${port} in ${process.env.NODE_ENV} mode`,
+  );
 });
